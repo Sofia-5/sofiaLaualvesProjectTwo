@@ -1,0 +1,21 @@
+@mixin buttons(){
+  padding: 10px 20px;
+  background: $color;
+  color: #0D457F; 
+  font-size: 2rem;
+  border: none;
+  // text-decoration: none;
+  // display: inline-block;
+  font-family: $headerFont;
+}
+
+@mixin navs {
+  padding: 10px 20px;
+  color: #ffffff; 
+  font-size: 2rem;
+  font-family: $bodyFont;
+  font-weight: 700;
+  // border: none;
+}
+
+
