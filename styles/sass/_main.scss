@@ -85,34 +85,46 @@ h4 {
   letter-spacing: 0.13rem;
 }
 
+
 .homePage .sectionTwo p {
   color: #ffffff;
 }
 
 .homePage .sectionTwo a {
   @include buttons ();
-  }
+}
+
+
+// .homePage .sectionTwo {
+//   position: relative;
+// }
 
 .homePage .topSectionTwoFlex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%; 
-  position: relative;
 }
 
 .homePage .topSectionTwoFlex .leftImg {
   // min-width: 50%;
   max-width: 50%;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  position: relative;
+  top: -20px;
+  left: -150px;
 }
+
+.homePage .topSectionTwoFlex .leftImg img {
+  box-shadow: 15px 15px $backgrd3Colour;
+} 
 
 .homePage .textContainer {
   min-width: 50%;
   max-width: 50%;
+  padding: 30px;
+  margin: 50px 0 40px 0;
 }
+
 
 .homePage .bottomSectionTwoFlex {
   display: flex;
@@ -125,12 +137,19 @@ h4 {
 .homePage .bottomSectionTwoFlex .rightImg {
   // min-width: 50%;
   max-width: 50%;
-  // position: absolute;
-  // bottom: 0;
-  // right: 0;
+  position: relative;
+  bottom: -30px;
+  right: -150px;
 }
 
 
+.homePage .bottomSectionTwoFlex .rightImg img {
+  box-shadow: -15px 15px $backgrd3Colour;
+} 
+
+.homePage .bottomSectionTwoFlex h2 {
+  text-align: right;
+}
 
 /* Section Three Styles */ 
 /*****************/
