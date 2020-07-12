@@ -1,12 +1,13 @@
-@mixin buttons(){
+@mixin buttons {
   padding: 10px 20px;
-  background: $color;
+  background: $backgrd3Colour;
   color: #0D457F; 
   font-size: 2rem;
   border: none;
-  // text-decoration: none;
-  // display: inline-block;
+  text-decoration: none;
+  display: inline-block;
   font-family: $headerFont;
+  text-transform: uppercase;
 }
 
 @mixin navs {

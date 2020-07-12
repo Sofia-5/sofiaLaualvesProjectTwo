@@ -13,6 +13,13 @@
   letter-spacing: 0.1px;
 }
 
+h1, 
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
 
 /*****************/
 /* Home Page Styles */ 
@@ -41,7 +48,7 @@
 
 .homePage .positionIcons:nth-child(1), 
 .homePage .positionIcons:nth-child(3) {
-  margin-right: 60px;
+  margin-right: 80px;
 }
 
 .homePage .sectionOneFlex h2 {
@@ -49,6 +56,7 @@
   font-family: $headerFont;
   font-size: 4.5rem;
   line-height: 9.98rem;
+  text-transform: uppercase;
 }
 
 .homePage .positionIcons {
@@ -62,14 +70,67 @@
   left: -65px;
 }
 
-
-  
 /* Section Two Styles */ 
 /*****************/
+
+.homePage .sectionTwo {
+  background-color: $backgrd2Colour;
+}
+
+.homePage .sectionTwo h2 {
+  color: $headerThreeColour;
+  font-family: $headerFont;
+  font-size: 4rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.13rem;
+}
 
 .homePage .sectionTwo p {
   color: #ffffff;
 }
+
+.homePage .sectionTwo a {
+  @include buttons ();
+  }
+
+.homePage .topSectionTwoFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; 
+  position: relative;
+}
+
+.homePage .topSectionTwoFlex .leftImg {
+  // min-width: 50%;
+  max-width: 50%;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+}
+
+.homePage .textContainer {
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.homePage .bottomSectionTwoFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; 
+  // position: relative;
+}
+
+.homePage .bottomSectionTwoFlex .rightImg {
+  // min-width: 50%;
+  max-width: 50%;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+}
+
+
 
 /* Section Three Styles */ 
 /*****************/

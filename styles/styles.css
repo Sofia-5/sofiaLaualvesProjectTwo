@@ -325,13 +325,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .homePage h1 {
   color: #FDD908;
   font-family: "IM Fell English", serif;
   font-size: 7.9rem;
-  width: 50%;
+  width: 40%;
   margin-bottom: 2rem;
 }
 
@@ -364,6 +366,13 @@ html {
   font-size: 2rem;
   line-height: 2.8rem;
   letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
 }
 
 /*****************/
@@ -399,7 +408,7 @@ html {
 
 .homePage .positionIcons:nth-child(1),
 .homePage .positionIcons:nth-child(3) {
-  margin-right: 60px;
+  margin-right: 80px;
 }
 
 .homePage .sectionOneFlex h2 {
@@ -407,6 +416,7 @@ html {
   font-family: "IM Fell English", serif;
   font-size: 4.5rem;
   line-height: 9.98rem;
+  text-transform: uppercase;
 }
 
 .homePage .positionIcons {
@@ -429,8 +439,72 @@ html {
 
 /* Section Two Styles */
 /*****************/
+.homePage .sectionTwo {
+  background-color: #0D457F;
+}
+
+.homePage .sectionTwo h2 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  font-size: 4rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.13rem;
+}
+
 .homePage .sectionTwo p {
   color: #ffffff;
+}
+
+.homePage .sectionTwo a {
+  padding: 10px 20px;
+  background: #FDD908;
+  color: #0D457F;
+  font-size: 2rem;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+}
+
+.homePage .topSectionTwoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.homePage .topSectionTwoFlex .leftImg {
+  max-width: 50%;
+}
+
+.homePage .textContainer {
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.homePage .bottomSectionTwoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.homePage .bottomSectionTwoFlex .rightImg {
+  max-width: 50%;
 }
 
 /* Section Three Styles */
