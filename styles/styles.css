@@ -280,7 +280,7 @@ html {
 /* Global Styles */
 /*****************/
 .headerWrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto;
 }
@@ -292,6 +292,8 @@ html {
   background-color: purple;
   background-image: url("assets/home-header.jpg");
   width: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .homePage .headerNav {
@@ -309,22 +311,36 @@ html {
 }
 
 .homePage .headerNav a {
+  padding: 10px 20px;
   color: #ffffff;
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
-}
-
-.homePage h1 {
-  color: #FDD908;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
 }
 
 .homePage .bottomHeader {
   width: 100%;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.homePage .bottomHeader img {
+.homePage h1 {
+  color: #FDD908;
+  font-family: "IM Fell English", serif;
+  font-size: 7.9rem;
   width: 50%;
+  margin-bottom: 2rem;
+}
+
+.homePage .headerImg {
+  min-width: 50%;
+  max-width: 50%;
   position: absolute;
+  right: 0;
+  bottom: -160px;
 }
 
 /*****************/
@@ -337,9 +353,17 @@ html {
 /* Global Styles */
 /*****************/
 .homePage .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto;
+}
+
+.homePage p {
+  color: #031f22;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }
 
 /*****************/
@@ -347,18 +371,66 @@ html {
 /*****************/
 /* Section One Styles */
 /*****************/
-.homePage .wrapper {
-  max-width: 1400px;
-  width: 80%;
-  margin: 0 auto;
+.homePage .sectionOne {
+  background-color: #EAFEFC;
+}
+
+.homePage .sectionOneFlex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.homePage .positionIcons {
+  width: 40%;
+  margin: 60px 0;
+}
+
+.homePage .positionIcons:nth-child(1),
+.homePage .positionIcons:nth-child(3) {
+  margin-right: 60px;
+}
+
+.homePage .sectionOneFlex h2 {
+  color: #0D457F;
+  font-family: "IM Fell English", serif;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
+.homePage .positionIcons {
+  position: relative;
+}
+
+.homePage .positionIcons i {
+  background-color: #FDD908;
+  color: #0D457F;
+  font-size: 2.8rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  position: absolute;
+  top: 25px;
+  left: -65px;
 }
 
 /* Section Two Styles */
 /*****************/
-.homePage .wrapper {
-  max-width: 1400px;
-  width: 80%;
-  margin: 0 auto;
+.homePage .sectionTwo p {
+  color: #ffffff;
 }
 
 /* Section Three Styles */

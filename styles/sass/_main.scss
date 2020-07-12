@@ -5,6 +5,14 @@
   @include wrapper ();
 }
 
+.homePage p {
+  color: #031f22;
+  font-family: $bodyFont;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+}
+
 
 /*****************/
 /* Home Page Styles */ 
@@ -12,14 +20,55 @@
 
 /* Section One Styles */ 
 /*****************/
-.homePage .wrapper {
-  @include wrapper ();
+
+.homePage .sectionOne {
+  background-color: $backgrd1Colour;
 }
+
+.homePage .sectionOneFlex {
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.homePage .positionIcons {
+  width: 40%;
+  margin: 60px 0;
+}
+
+.homePage .positionIcons:nth-child(1), 
+.homePage .positionIcons:nth-child(3) {
+  margin-right: 60px;
+}
+
+.homePage .sectionOneFlex h2 {
+  color: $headerTwoColour;
+  font-family: $headerFont;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
+.homePage .positionIcons {
+  position: relative;
+}
+
+.homePage .positionIcons i {
+  @include icons ();
+  position: absolute;
+  top: 25px;
+  left: -65px;
+}
+
+
   
 /* Section Two Styles */ 
 /*****************/
-.homePage .wrapper {
-  @include wrapper ();
+
+.homePage .sectionTwo p {
+  color: #ffffff;
 }
 
 /* Section Three Styles */ 

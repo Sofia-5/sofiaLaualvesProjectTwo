@@ -2,11 +2,8 @@
 /* Global Styles */ 
 /*****************/
 .headerWrapper {
-  max-width: 1400px;
-  width: 80%;
-  margin: 0 auto;
+  @include wrapper ();
 }
-
 /*****************/
 /* Home Page Styles */ 
 /*****************/
@@ -15,6 +12,8 @@
   background-color: purple;
   background-image: url("assets/home-header.jpg");
   width: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .homePage .headerNav { 
@@ -27,24 +26,32 @@
 }
 
 .homePage .headerNav a {
-  color: #ffffff;
-  font-family: $bodyFont;
+  @include navs ();
 } 
-
-.homePage h1 {
-  color: $headerOneMainColour; 
-}
 
 .homePage .bottomHeader {
   width: 100%; 
-  position: relative; 
+  display: flex;
 }
 
-.homePage .bottomHeader img {
+.homePage h1 {
+  color: $headerOneMainColour; 
+  font-family: $headerFont; 
+  font-size: 7.9rem;
   width: 50%;
-  position: absolute; 
+  margin-bottom: 2rem;
 }
 
+
+.homePage .headerImg {
+  min-width: 50%;
+  max-width: 50%;
+  // max-height: 50%;
+  // min-height: 50%;
+  position: absolute; 
+  right: 0; 
+  bottom: -160px;
+}
 
 
 /*****************/

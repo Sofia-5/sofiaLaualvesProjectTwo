@@ -15,13 +15,26 @@
   font-size: 2rem;
   font-family: $bodyFont;
   font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
   // border: none;
 }
 
 @mixin wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto;  
+}
+
+@mixin icons {
+  background-color: $backgrd3Colour;
+  color: $headerTwoColour;
+  font-size: 2.8rem;
+  width: 5rem; 
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
 }
 
 
