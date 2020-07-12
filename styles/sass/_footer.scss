@@ -1,22 +1,25 @@
 /*****************/
 /* Global Styles */ 
 /*****************/
-.footerWrapper {
-  max-width: 1400px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
+
+
 
 /*****************/
 /* Home Page Styles */ 
 /*****************/
+
+.homePage footer  {
+  @include footer ();
+}
 
 
 
 /*****************/
 /* Blog Styles */ 
 /*****************/
+.blog footer  {
+  @include footer ();
+}
 
 
 
@@ -24,4 +27,7 @@
 /* Contact Styles */ 
 /*****************/
 
+.contact footer  {
+  @include footer ();
+}
 

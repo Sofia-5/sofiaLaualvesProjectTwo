@@ -1,0 +1,32 @@
+/*****************/
+/* Global Styles */ 
+/*****************/
+.homePage .wrapper {
+  @include wrapper ();
+}
+
+.homePage p {
+  color: #031f22;
+  font-family: $bodyFont;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+}
+
+h1, 
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $headerTwoColour;
+  font-family: $headerFont;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
+.button {
+  @include buttons ();
+}

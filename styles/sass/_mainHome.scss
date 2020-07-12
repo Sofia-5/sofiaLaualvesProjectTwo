@@ -218,6 +218,22 @@ h2 {
 
 /* Section Six Styles */ 
 /*****************/
+.sectionSix {
+  background-color: $backgrd2Colour;
+  padding: 80px 0; 
+}
+
+.sectionSix .FlexImgContainer {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.sectionSix li {
+  width: calc(100%/3 - 20px);
+}
 
 
 /*****************/

@@ -1,9 +1,14 @@
 /*****************/
 /* Global Styles */ 
 /*****************/
-.headerWrapper {
+.wrapper {
   @include wrapper ();
 }
+
+h1 {
+  @include h1 ($color: #ffffff);
+}
+
 /*****************/
 /* Home Page Styles */ 
 /*****************/
@@ -35,12 +40,8 @@
   flex-wrap: wrap;
 }
 
-.homePage h1 {
-  color: $headerOneMainColour; 
-  font-family: $headerFont; 
-  font-size: 7.9rem;
-  width: 40%;
-  margin-bottom: 2rem;
+.homePage .bottomHeader h1 {
+  @include h1 ($color:#FDD908);
 }
 
 .homePage .headerImg {
@@ -57,6 +58,23 @@
 /*****************/
 /* Blog Styles */ 
 /*****************/
+
+.blog header {
+  background-color: purple;
+  background-image: url("/assets/home-header.jpg");
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.blog .headerNav a {
+  @include navs ();
+} 
+
+.blog h1 {
+  @include h1 ();
+}
+
 
 
 

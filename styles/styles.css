@@ -279,10 +279,19 @@ html {
 /*****************/
 /* Global Styles */
 /*****************/
-.headerWrapper {
+.wrapper {
   max-width: 1200px;
   width: 80%;
   margin: 0 auto;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  font-size: 7.9rem;
+  text-shadow: 2px 2px 8px #031f22;
+  width: 40%;
+  margin-bottom: 2rem;
 }
 
 /*****************/
@@ -330,10 +339,11 @@ html {
       flex-wrap: wrap;
 }
 
-.homePage h1 {
+.homePage .bottomHeader h1 {
   color: #FDD908;
   font-family: "IM Fell English", serif;
   font-size: 7.9rem;
+  text-shadow: 2px 2px 8px #031f22;
   width: 40%;
   margin-bottom: 2rem;
 }
@@ -349,6 +359,33 @@ html {
 /*****************/
 /* Blog Styles */
 /*****************/
+.homePage header {
+  background-color: purple;
+  background-image: url("/assets/home-header.jpg");
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.blog .headerNav a {
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.homePage h1 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  font-size: 7.9rem;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
 /*****************/
 /* Contact Styles */
 /*****************/
@@ -604,6 +641,31 @@ h2 {
 
 /* Section Six Styles */
 /*****************/
+.sectionSix {
+  background-color: #0D457F;
+  padding: 80px 0;
+}
+
+.sectionSix .FlexImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.sectionSix li {
+  width: calc(100%/3 - 20px);
+}
+
 /*****************/
 /* Blog Styles */
 /*****************/
@@ -619,19 +681,50 @@ h2 {
 /*****************/
 /* Global Styles */
 /*****************/
-.footerWrapper {
-  max-width: 1400px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 /*****************/
 /* Home Page Styles */
 /*****************/
+.homePage footer {
+  text-align: center;
+  background-color: #FDD908;
+}
+
+.homePage footer p {
+  color: #0D457F;
+}
+
+.homePage footer a {
+  color: #0D457F;
+}
+
 /*****************/
 /* Blog Styles */
 /*****************/
+.blog footer {
+  text-align: center;
+  background-color: #FDD908;
+}
+
+.blog footer p {
+  color: #0D457F;
+}
+
+.blog footer a {
+  color: #0D457F;
+}
+
 /*****************/
 /* Contact Styles */
 /*****************/
+.contact footer {
+  text-align: center;
+  background-color: #FDD908;
+}
+
+.contact footer p {
+  color: #0D457F;
+}
+
+.contact footer a {
+  color: #0D457F;
+}

@@ -1,3 +1,13 @@
+@mixin h1 ($color) {
+  color: $color; 
+  font-family: $headerFont; 
+  font-size: 7.9rem;
+  text-shadow: 2px 2px 8px #031f22;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+
 @mixin buttons {
   padding: 10px 20px;
   background: $backgrd3Colour;
@@ -38,6 +48,17 @@
   border-radius: 50%;
   text-align: center;
   line-height: 45px;
+}
+
+@mixin footer {
+  text-align: center;
+  background-color: $backgrd3Colour;
+    p {
+    color: $backgrd2Colour;
+    }
+    a {
+      color: $backgrd2Colour;
+    }
 }
 
 
