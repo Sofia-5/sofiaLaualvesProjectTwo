@@ -1,0 +1,60 @@
+/*****************/
+/* Global Styles */ 
+/*****************/
+.headerWrapper {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*****************/
+/* Home Page Styles */ 
+/*****************/
+
+.homePage header {
+  background-color: purple;
+  background-image: url("assets/home-header.jpg");
+  width: 100%;
+}
+
+.homePage .headerNav { 
+  margin: 6rem 0; 
+}
+
+.homePage .headerNav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.homePage .headerNav a {
+  color: #ffffff;
+  font-family: $bodyFont;
+} 
+
+.homePage h1 {
+  color: $headerOneMainColour; 
+}
+
+.homePage .bottomHeader {
+  width: 100%; 
+  position: relative; 
+}
+
+.homePage .bottomHeader img {
+  width: 50%;
+  position: absolute; 
+}
+
+
+
+/*****************/
+/* Blog Styles */ 
+/*****************/
+
+
+
+/*****************/
+/* Contact Styles */ 
+/*****************/
+
+

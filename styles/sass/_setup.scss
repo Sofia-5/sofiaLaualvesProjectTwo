@@ -12,3 +12,16 @@ ol, ul { list-style: none;}
 a { text-decoration: none; display: inline-block;}
 img {max-width: 100%; height: auto; display: block;}
 html {font-size: 62.5%;}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
