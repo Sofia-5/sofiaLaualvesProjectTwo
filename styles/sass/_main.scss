@@ -20,6 +20,17 @@ h4 {
   text-transform: uppercase;
 }
 
+h2 {
+  color: $headerTwoColour;
+  font-family: $headerFont;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
+.button {
+  @include buttons ();
+}
+
 
 /*****************/
 /* Home Page Styles */ 
@@ -51,14 +62,6 @@ h4 {
   margin-right: 80px;
 }
 
-.homePage .sectionOneFlex h2 {
-  color: $headerTwoColour;
-  font-family: $headerFont;
-  font-size: 4.5rem;
-  line-height: 9.98rem;
-  text-transform: uppercase;
-}
-
 .homePage .positionIcons {
   position: relative;
 }
@@ -77,7 +80,7 @@ h4 {
   background-color: $backgrd2Colour;
 }
 
-.homePage .sectionTwo h2 {
+.homePage .sectionTwo h3 {
   color: $headerThreeColour;
   font-family: $headerFont;
   font-size: 4rem;
@@ -88,10 +91,6 @@ h4 {
 
 .homePage .sectionTwo p {
   color: #ffffff;
-}
-
-.homePage .sectionTwo a {
-  @include buttons ();
 }
 
 
@@ -142,7 +141,6 @@ h4 {
   right: -150px;
 }
 
-
 .homePage .bottomSectionTwoFlex .rightImg img {
   box-shadow: -15px 15px $backgrd3Colour;
 } 
@@ -154,13 +152,68 @@ h4 {
 /* Section Three Styles */ 
 /*****************/
 
+.SectionThree {
+  text-align: center;
+  background-color: $backgrd1Colour;
+  padding: 150px 0 100px 0;
+}
+
+.SectionThree .wrapper {
+  width: 55%;
+}
+
+.SectionThree h2 {
+  color: $headerTwoColour;
+  font-family: $headerFont;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
 
 /* Section Four Styles */ 
 /*****************/
 
+.sectionFour {
+  background-image: url("/assets/banner.jpg");
+}
+
 
 /* Section Five Styles */ 
 /*****************/
+
+.sectionFive {
+  background-color: $backgrd1Colour;
+}
+
+.sectionFiveContainer {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+.sectionFiveImage {
+  width: 25%;
+  height: 100%;
+  flex-shrink: 1;
+}
+
+.sectionFiveImage img {
+  box-shadow: -15px 15px $backgrd3Colour;
+}
+
+.SecFiveTextContainer {
+  width: 70%;
+  flex-shrink: 3;
+}
+
+.SecFiveTextContainer h2 {
+  color: $headerTwoColour;
+  font-family: $headerFont;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
 
 
 /* Section Six Styles */ 

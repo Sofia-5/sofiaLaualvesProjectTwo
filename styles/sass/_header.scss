@@ -10,7 +10,7 @@
 
 .homePage header {
   background-color: purple;
-  background-image: url("assets/home-header.jpg");
+  background-image: url("/assets/home-header.jpg");
   width: 100%;
   position: relative;
   height: 100%;
@@ -42,7 +42,6 @@
   width: 40%;
   margin-bottom: 2rem;
 }
-
 
 .homePage .headerImg {
   min-width: 50%;

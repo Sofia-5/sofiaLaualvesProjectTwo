@@ -290,7 +290,7 @@ html {
 /*****************/
 .homePage header {
   background-color: purple;
-  background-image: url("assets/home-header.jpg");
+  background-image: url("/assets/home-header.jpg");
   width: 100%;
   position: relative;
   height: 100%;
@@ -376,6 +376,24 @@ h4 {
   text-transform: uppercase;
 }
 
+h2 {
+  color: #0D457F;
+  font-family: "IM Fell English", serif;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #FDD908;
+  color: #0D457F;
+  font-size: 2rem;
+  border: none;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
 /*****************/
 /* Home Page Styles */
 /*****************/
@@ -412,14 +430,6 @@ h4 {
   margin-right: 80px;
 }
 
-.homePage .sectionOneFlex h2 {
-  color: #0D457F;
-  font-family: "IM Fell English", serif;
-  font-size: 4.5rem;
-  line-height: 9.98rem;
-  text-transform: uppercase;
-}
-
 .homePage .positionIcons {
   position: relative;
 }
@@ -444,7 +454,7 @@ h4 {
   background-color: #0D457F;
 }
 
-.homePage .sectionTwo h2 {
+.homePage .sectionTwo h3 {
   color: #ffffff;
   font-family: "IM Fell English", serif;
   font-size: 4rem;
@@ -454,17 +464,6 @@ h4 {
 
 .homePage .sectionTwo p {
   color: #ffffff;
-}
-
-.homePage .sectionTwo a {
-  padding: 10px 20px;
-  background: #FDD908;
-  color: #0D457F;
-  font-size: 2rem;
-  border: none;
-  font-family: "IM Fell English", serif;
-  text-transform: uppercase;
-  margin-top: 40px;
 }
 
 .homePage .topSectionTwoFlex {
@@ -530,10 +529,79 @@ h4 {
 
 /* Section Three Styles */
 /*****************/
+.SectionThree {
+  text-align: center;
+  background-color: #EAFEFC;
+  padding: 150px 0 100px 0;
+}
+
+.SectionThree .wrapper {
+  width: 55%;
+}
+
+.SectionThree h2 {
+  color: #0D457F;
+  font-family: "IM Fell English", serif;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
 /* Section Four Styles */
 /*****************/
+.sectionFour {
+  background-image: url("/assets/banner.jpg");
+}
+
 /* Section Five Styles */
 /*****************/
+.sectionFive {
+  background-color: #EAFEFC;
+}
+
+.sectionFiveContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+.sectionFiveImage {
+  width: 25%;
+  height: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.sectionFiveImage img {
+  -webkit-box-shadow: -15px 15px #FDD908;
+          box-shadow: -15px 15px #FDD908;
+}
+
+.SecFiveTextContainer {
+  width: 70%;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+}
+
+.SecFiveTextContainer h2 {
+  color: #0D457F;
+  font-family: "IM Fell English", serif;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
 /* Section Six Styles */
 /*****************/
 /*****************/
