@@ -2,11 +2,16 @@
 @import 'variables'; 
 @import 'mixins';
 @import 'global';
-@import 'header'; 
+@import 'headerHome'; 
 @import 'nav';
 @import 'mainHome'; 
+
+@import 'headerBlog'; 
 @import 'mainBlog';
+
+@import 'headerContact'; 
 @import 'mainContact';
+
 @import 'footer';
 @import 'mediaqueries';
 

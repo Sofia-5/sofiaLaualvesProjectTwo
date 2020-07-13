@@ -7,6 +7,13 @@
   margin-bottom: 2rem;
 }
 
+@mixin p ($color) {
+  color: ($color);
+  font-family: $bodyFont;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+}
 
 @mixin buttons {
   padding: 10px 20px;
@@ -53,12 +60,16 @@
 @mixin footer {
   text-align: center;
   background-color: $backgrd3Colour;
-    p {
+  p {
     color: $backgrd2Colour;
-    }
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1px;
     a {
       color: $backgrd2Colour;
+      font-size: 2rem;
+      line-height: 2.8rem;
+      letter-spacing: 0.1px;
     }
-}
-
-
+  }
+} 

@@ -2,6 +2,9 @@
 /* Global Styles */ 
 /*****************/
 
+footer {
+  @include footer ();
+}
 
 
 /*****************/

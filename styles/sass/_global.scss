@@ -1,16 +1,13 @@
 /*****************/
 /* Global Styles */ 
 /*****************/
-.homePage .wrapper {
+
+.wrapper {
   @include wrapper ();
 }
 
-.homePage p {
-  color: #031f22;
-  font-family: $bodyFont;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  letter-spacing: 0.1px;
+h1 {
+  @include h1 (#ffffff);
 }
 
 h1, 
@@ -25,6 +22,14 @@ h2 {
   font-family: $headerFont;
   font-size: 4.5rem;
   line-height: 9.98rem;
+}
+
+p {
+  color: #031f22;
+  font-family: $bodyFont;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }
 
 .button {

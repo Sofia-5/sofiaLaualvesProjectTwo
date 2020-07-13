@@ -298,7 +298,6 @@ h1 {
 /* Home Page Styles */
 /*****************/
 .homePage header {
-  background-color: purple;
   background-image: url("/assets/home-header.jpg");
   width: 100%;
   position: relative;
@@ -359,12 +358,11 @@ h1 {
 /*****************/
 /* Blog Styles */
 /*****************/
-.homePage header {
-  background-color: purple;
-  background-image: url("/assets/home-header.jpg");
+
+.blog header .headerBackground {
+  background-image: url("/assets/blog-header.jpg");
   width: 100%;
-  position: relative;
-  height: 100%;
+  background-color: royalblue;
 }
 
 .blog .headerNav a {
@@ -378,7 +376,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.homePage h1 {
+.blog h1 {
   color: #ffffff;
   font-family: "IM Fell English", serif;
   font-size: 7.9rem;
@@ -566,13 +564,10 @@ h2 {
 
 /* Section Three Styles */
 /*****************/
-.SectionThree {
+.SectionThree .wrapper {
   text-align: center;
   background-color: #EAFEFC;
   padding: 150px 0 100px 0;
-}
-
-.SectionThree .wrapper {
   width: 55%;
 }
 
