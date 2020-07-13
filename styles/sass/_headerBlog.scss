@@ -17,31 +17,5 @@
   @include h1 (#ffffff);
 }
 
-/* Section 1 Styles */ 
-/*****************/
-
-.blog .sectionOne {
-  // position: relative; 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.blog .sectionOne aside {
-  width: 20%;
-  display: flex; 
-  flex-direction: column;
-}
-
-.blog .sectionOne .sectionOneRightContainer {
-  width: 70%;
-  display: flex; 
-  flex-direction: column;
-}
-
-.blog .sectionOne .sectionOneRightContainer img {
-
-}
 
 

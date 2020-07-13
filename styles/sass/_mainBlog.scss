@@ -9,6 +9,172 @@
   background-color: $backgrd1Colour;
 }
 
+.blog .sectionOne {
+  // position: relative; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blog .sectionOne aside {
+  width: 20%;
+  display: flex; 
+  flex-direction: column;
+  background-color: $backgrd2Colour;
+  height: 720px;
+  padding: 20px;
+  position: relative;
+  margin: 70px 0 200px 70px;
+}
+
+.blog .sectionOne aside .asideImage { 
+  position: absolute;
+  top: -15px;
+  left: -70px;
+  width: 120%;
+}
+
+.blog .sectionOne .blueContainer {
+  padding: 260px 10px 0 10px;
+  position: absolute;
+  top: 10px;
+  right: -20px;
+}
+
+.blog .sectionOne .blueContainer h4 {
+  @include h4 ($headerFourColour);
+  font-size: 20px;
+}
+
+.blog .sectionOne .blueContainer p {
+  @include p (#ffffff);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.blog .sectionOne .blueContainer .margin-bottom {
+  margin-bottom: 20px;
+}
+
+.blog .sectionOne .blueContainer .list li {
+  list-style: initial;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.blog .sectionOne .sectionOneRightContainer {
+  width: 65%;
+  display: flex; 
+  flex-direction: column;
+  border-left: 5px solid $backgrd3Colour;
+  border-bottom: 5px solid $backgrd3Colour;
+}
+
+.blog .sectionOne .sectionOneRightContainer img {
+  box-shadow: -15px 15px $backgrd3Colour;
+}
+
+.blog .sectionOne .sectionOneRightContainer .yellowContainer {
+  padding: 30px 40px 100px 90px;
+}
+
+.blog .sectionOne .sectionOneRightContainer .yellowContainer p {
+  @include p ($p);
+  margin-bottom: 20px;
+} 
+
 /* Section Two Styles */ 
 /*****************/
+
+.blog .sectionTwo {
+  background-color: $backgrd1Colour;
+} 
+
+.blog .sectionTwo .wrapper {
+  width: 50%;
+  margin: 0 20% 0 40%;  
+}
+
+.blog .sectionTwo .wrapper .flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blog .sectionTwo .wrapper .flexContainer .image {
+  width: 20%;
+}
+
+.blog .sectionTwo .wrapper .flexContainer .textContainer {
+  width: 80%;
+}
+
+.blog .sectionTwo .wrapper h5 {
+  @include h5 ($h5);
+}
+
+.blog .sectionTwo .wrapper {
+  margin-bottom: 30px;
+}
+
+.blog .sectionTwo .form {
+  width: 50%;
+  margin: 0 20% 0 40%;  
+}
+
+.blog .sectionTwo .form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog .sectionTwo .form form .topForm {
+  width: 100%;
+}
+
+.blog .sectionTwo .form form .topForm input {
+  border: none;
+  border-bottom: 2px solid $backgrd3Colour;
+  background-color: $backgrd1Colour;
+  width: calc(100%/2 - 20px);
+  margin-bottom: 30px;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+}
+
+.blog .sectionTwo .form form .topForm .margin{
+  margin-right: 35px;
+}
+
+.blog .sectionTwo .form form .bottomForm textarea {
+  border: 2px solid $backgrd3Colour;
+  background-color: $backgrd1Colour;
+  width: 100%;
+  height: 200px;
+}
+
+.blog .sectionTwo .form input {
+  @include p ($p);
+}
+
+
+.blog .sectionTwo .form .bottomForm textarea {
+  @include p ($p);
+  padding:20px;
+}
+
+.blog .sectionTwo .form .submit button {
+  padding: 10px 20px;
+  background: $backgrd2Colour;
+  color: $backgrd3Colour; 
+  font-size: 2rem;
+  border: none;
+  font-family: $headerFont;
+  text-transform: uppercase;
+  margin: 40px 0;
+  width: 100%;
+}
+
+
 

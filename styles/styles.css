@@ -294,14 +294,65 @@ h1 {
   margin-bottom: 2rem;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #0D457F;
+  font-family: "IM Fell English", serif;
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+}
+
+p {
+  color: #031f22;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #FDD908;
+  color: #0D457F;
+  font-size: 2rem;
+  border: none;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+/*****************/
+/* Global Styles */
+/*****************/
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  font-size: 7.9rem;
+  text-shadow: 2px 2px 8px #031f22;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
 /*****************/
 /* Home Page Styles */
 /*****************/
 .homePage header {
-  background-image: url("/assets/home-header.jpg");
+  background-image: url("../../assets/home-header.jpg");
   width: 100%;
   position: relative;
-  height: 100%;
+  height: 90vh;
 }
 
 .homePage .headerNav {
@@ -353,80 +404,6 @@ h1 {
   position: absolute;
   right: 0;
   bottom: -160px;
-}
-
-/*****************/
-/* Blog Styles */
-/*****************/
-
-.blog header .headerBackground {
-  background-image: url("/assets/blog-header.jpg");
-  width: 100%;
-  background-color: royalblue;
-}
-
-.blog .headerNav a {
-  padding: 10px 20px;
-  color: #ffffff;
-  font-size: 2rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  line-height: 2.9rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-}
-
-.blog h1 {
-  color: #ffffff;
-  font-family: "IM Fell English", serif;
-  font-size: 7.9rem;
-  width: 40%;
-  margin-bottom: 2rem;
-}
-
-/*****************/
-/* Contact Styles */
-/*****************/
-/*****************/
-/* Global Styles */
-/*****************/
-.homePage .wrapper {
-  max-width: 1200px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.homePage p {
-  color: #031f22;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  letter-spacing: 0.1px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
-h2 {
-  color: #0D457F;
-  font-family: "IM Fell English", serif;
-  font-size: 4.5rem;
-  line-height: 9.98rem;
-}
-
-.button {
-  padding: 10px 20px;
-  background: #FDD908;
-  color: #0D457F;
-  font-size: 2rem;
-  border: none;
-  font-family: "IM Fell English", serif;
-  text-transform: uppercase;
-  margin-top: 40px;
 }
 
 /*****************/
@@ -564,14 +541,17 @@ h2 {
 
 /* Section Three Styles */
 /*****************/
-.SectionThree .wrapper {
+.homePage .sectionThree {
   text-align: center;
   background-color: #EAFEFC;
   padding: 150px 0 100px 0;
+}
+
+.homePage .sectionThree .wrapper {
   width: 55%;
 }
 
-.SectionThree h2 {
+.homePage .sectionThree h2 {
   color: #0D457F;
   font-family: "IM Fell English", serif;
   font-size: 4.5rem;
@@ -580,17 +560,17 @@ h2 {
 
 /* Section Four Styles */
 /*****************/
-.sectionFour {
-  background-image: url("/assets/banner.jpg");
+.homePage .sectionFour img {
+  width: 2000px;
 }
 
 /* Section Five Styles */
 /*****************/
-.sectionFive {
+.homePage .sectionFive {
   background-color: #EAFEFC;
 }
 
-.sectionFiveContainer {
+.homePage .sectionFiveContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,25 +589,25 @@ h2 {
   padding: 80px 0;
 }
 
-.sectionFiveImage {
+.homePage .sectionFiveImage {
   width: 25%;
   height: 100%;
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
 
-.sectionFiveImage img {
+.homePage .sectionFiveImage img {
   -webkit-box-shadow: -15px 15px #FDD908;
           box-shadow: -15px 15px #FDD908;
 }
 
-.SecFiveTextContainer {
+.homePage .SecFiveTextContainer {
   width: 70%;
   -ms-flex-negative: 3;
       flex-shrink: 3;
 }
 
-.SecFiveTextContainer h2 {
+.homePage .SecFiveTextContainer h2 {
   color: #0D457F;
   font-family: "IM Fell English", serif;
   font-size: 4.5rem;
@@ -636,12 +616,12 @@ h2 {
 
 /* Section Six Styles */
 /*****************/
-.sectionSix {
+.homePage .sectionSix {
   background-color: #0D457F;
   padding: 80px 0;
 }
 
-.sectionSix .FlexImgContainer {
+.homePage .sectionSix .FlexImgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,8 +637,37 @@ h2 {
   width: 100%;
 }
 
-.sectionSix li {
+.homePage .sectionSix li {
   width: calc(100%/3 - 20px);
+}
+
+/*****************/
+/* Blog Styles */
+/*****************/
+.blog header .headerBackground {
+  background-image: url("../BoatRideAdventures/assets/blog-header.jpg");
+  width: 100%;
+  background-color: royalblue;
+}
+
+.blog .headerNav a {
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.blog h1 {
+  color: #ffffff;
+  font-family: "IM Fell English", serif;
+  font-size: 7.9rem;
+  text-shadow: 2px 2px 8px #031f22;
+  width: 40%;
+  margin-bottom: 2rem;
 }
 
 /*****************/
@@ -666,7 +675,230 @@ h2 {
 /*****************/
 /* Section One Styles */
 /*****************/
+.blog main .sectionOne {
+  background-color: #EAFEFC;
+}
+
+.blog .sectionOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.blog .sectionOne aside {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0D457F;
+  height: 720px;
+  padding: 20px;
+  position: relative;
+  margin: 70px 0 200px 70px;
+}
+
+.blog .sectionOne aside .asideImage {
+  position: absolute;
+  top: -15px;
+  left: -70px;
+  width: 120%;
+}
+
+.blog .sectionOne .blueContainer {
+  padding: 260px 10px 0 10px;
+  position: absolute;
+  top: 10px;
+  right: -20px;
+}
+
+.blog .sectionOne .blueContainer h4 {
+  color: #FDD908;
+  font-family: "IM Fell English", serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.blog .sectionOne .blueContainer p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.blog .sectionOne .blueContainer .margin-bottom {
+  margin-bottom: 20px;
+}
+
+.blog .sectionOne .blueContainer .list li {
+  list-style: initial;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.blog .sectionOne .sectionOneRightContainer {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 5px solid #FDD908;
+  border-bottom: 5px solid #FDD908;
+}
+
+.blog .sectionOne .sectionOneRightContainer img {
+  -webkit-box-shadow: -15px 15px #FDD908;
+          box-shadow: -15px 15px #FDD908;
+}
+
+.blog .sectionOne .sectionOneRightContainer .yellowContainer {
+  padding: 30px 40px 100px 90px;
+}
+
+.blog .sectionOne .sectionOneRightContainer .yellowContainer p {
+  color: #031f22;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+}
+
 /* Section Two Styles */
+/*****************/
+.blog .sectionTwo {
+  background-color: #EAFEFC;
+}
+
+.blog .sectionTwo .wrapper {
+  width: 50%;
+  margin: 0 20% 0 40%;
+}
+
+.blog .sectionTwo .wrapper .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .sectionTwo .wrapper .flexContainer .image {
+  width: 20%;
+}
+
+.blog .sectionTwo .wrapper .flexContainer .textContainer {
+  width: 80%;
+}
+
+.blog .sectionTwo .wrapper h5 {
+  color: #0D457F;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
+}
+
+.blog .sectionTwo .wrapper {
+  margin-bottom: 30px;
+}
+
+.blog .sectionTwo .form {
+  width: 50%;
+  margin: 0 20% 0 40%;
+}
+
+.blog .sectionTwo .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog .sectionTwo .form form .topForm {
+  width: 100%;
+}
+
+.blog .sectionTwo .form form .topForm input {
+  border: none;
+  border-bottom: 2px solid #FDD908;
+  background-color: #EAFEFC;
+  width: calc(100%/2 - 20px);
+  margin-bottom: 30px;
+}
+
+.blog .sectionTwo .form form .topForm .margin {
+  margin-right: 35px;
+}
+
+.blog .sectionTwo .form form .bottomForm textarea {
+  border: 2px solid #FDD908;
+  background-color: #EAFEFC;
+  width: 100%;
+  height: 200px;
+}
+
+.blog .sectionTwo .form input {
+  color: #031f22;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+}
+
+.blog .sectionTwo .form .bottomForm textarea {
+  color: #031f22;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+  padding: 20px;
+}
+
+.blog .sectionTwo .form .submit button {
+  padding: 10px 20px;
+  background: #0D457F;
+  color: #FDD908;
+  font-size: 2rem;
+  border: none;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  margin: 40px 0;
+  width: 100%;
+}
+
+/*****************/
+/* Contact Styles */
 /*****************/
 /*****************/
 /* Contact Styles */
@@ -676,6 +908,25 @@ h2 {
 /*****************/
 /* Global Styles */
 /*****************/
+footer {
+  text-align: center;
+  background-color: #FDD908;
+}
+
+footer p {
+  color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+}
+
+footer p a {
+  color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+}
+
 /*****************/
 /* Home Page Styles */
 /*****************/
@@ -686,10 +937,16 @@ h2 {
 
 .homePage footer p {
   color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }
 
-.homePage footer a {
+.homePage footer p a {
   color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }
 
 /*****************/
@@ -702,10 +959,16 @@ h2 {
 
 .blog footer p {
   color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }
 
-.blog footer a {
+.blog footer p a {
   color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }
 
 /*****************/
@@ -718,8 +981,14 @@ h2 {
 
 .contact footer p {
   color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }
 
-.contact footer a {
+.contact footer p a {
   color: #0D457F;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
 }

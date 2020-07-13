@@ -7,6 +7,41 @@
   margin-bottom: 2rem;
 }
 
+@mixin h2 ($color) {
+  color: $color; 
+  font-family: $headerFont; 
+  font-size: 4.5rem;
+  line-height: 9.98rem;
+  margin-bottom: 2rem;
+}
+
+@mixin h3 ($color) {
+  color: $color; 
+  font-family: $headerFont; 
+  font-size: 4rem;
+  line-height: 5.8rem;
+  margin-bottom: 2rem;
+}
+
+@mixin h4 ($color) {
+  color: $color; 
+  font-family: $headerFont; 
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
+}
+
+@mixin h5 ($color) {
+  color: $color; 
+  font-family: $bodyFont; 
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
+}
+
 @mixin p ($color) {
   color: ($color);
   font-family: $bodyFont;
@@ -56,6 +91,15 @@
   text-align: center;
   line-height: 45px;
 }
+
+@mixin input {
+  border-bottom: 2px solid $backgrd3Colour; 
+}
+
+@mixin textarea {
+  border: 2px solid $backgrd3Colour; 
+}
+
 
 @mixin footer {
   text-align: center;

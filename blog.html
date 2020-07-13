@@ -47,29 +47,30 @@
     <section class="sectionOne">
   
       <aside class="LeftContainer">
-        <div>
+        <div class="asideImage">
           <img src="assets/blog-side-image.jpg" alt="sail ropes on top of boat deck">
         </div>
         <div class="blueContainer">
-          <h3>Our Mission</h3>
-          <p>Nam depubus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementrum. Find out more.</p>
-          <h3>Recent Posts</h3>
-          <ul>
-            <li><p>Donec facilisis tortor ut</p></li>
-            <li><p>Augue lacinia at viverra</li></li>
-            <li><p>Semper sed sepien metus</p></li>
-            <li><p>Scelerisque nec pharetra id</p></li>
+          <h4>Our Mission</h4>
+          <p class="margin-bottom">Nam depubus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementrum. Find out more.</p>
+          <h4>Recent Posts</h4>
+          <ul class="list">
+            <li> <p> Donec facilisis tortor ut</p></li>
+            <li> <p> Augue lacinia at viverra</li></li>
+            <li> <p> Semper sed sepien metus</p></li>
+            <li> <p> Scelerisque nec pharetra id</p></li>
           </ul>
         </div>
       </aside>
 
+      
       <div class="sectionOneRightContainer" id="maincontent">
         <div>
           <img src="assets/blog-post-image.jpg" alt="front view of anchored in boat on the water">
         </div>
         <div class="yellowContainer">  
           <h2>Our Mission</h2>
-          <p>Monday OCtober 30, 2019 by Sulaire</p>
+          <p>Monday October 30, 2019 by Sulaire</p>
           <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. vestibulum nec erat ut mi sollicitudin porttior id sit amet risus. Man tempus vel odio vitae aliquam.</p>
 
           <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p> 
@@ -88,34 +89,50 @@
   <!------------------------>
   <!-- Section 2 Starts -->
   <!------------------------>
-    <section class="sectionTwoWrapper">
-      <article>
+    <section class="sectionTwo">
+      <article class="wrapper">
         <h2>Comments:</h2>
-        <div>
-          <img src="assets/comment-1.jpg" alt="smiling man">
-          <h3>Tuesday October 9th, 2019 by Ali</h3>
-          <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus.</p>
+        <div class="flexContainer">
+          <div class="image">
+            <img src="assets/comment-1.jpg" alt="smiling man">
+          </div>
+          <div class="textContainer">
+            <h5>Tuesday October 9th, 2019 by Ali</h5>
+            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus.</p>
+          </div>
         </div>
-        <div>
-          <img src="assets/comment-2.jpg" alt="laughing woman">
-          <h3>Wednesday October 10th, 2019 by Lisa</h3>
-          <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices Donec euismod scelerisque ligula.</p>
+    
+        <div class="flexContainer">
+          <div class="image">
+            <img src="assets/comment-2.jpg" alt="laughing woman">
+          </div>
+          <div class="textContainer">
+            <h5>Wednesday October 10th, 2019 by Lisa</h5>
+            <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices Donec euismod scelerisque ligula.</p>
+          </div>
         </div>
       </article>
 
       <div class="form">
         <form class="emailform" action="#" method="get">
 
-          <label for="name" class="sr-only"></label>
-          <input type="text" id="name" name="name" placeholder="Name">
+          <div class="topForm">
+            <label for="name" class="sr-only"></label>
+            <input class="margin" type="text" id="name" name="name" placeholder="Name">
+            
+            <label for="email" class="sr-only"></label>
+            <input type="email" id="email" name="email" placeholder="Email address">
+          </div>
+
+          <div class="bottomForm">
+            <label for="comment" class="sr-only"></label>
+            <textarea type="text" id="comment" name="comment" placeholder="Comment"></textarea>
+          </div>
           
-          <label for="email" class="sr-only"></label>
-          <input type="email" id="email" name="email" placeholder="Email address">
-
-          <label for="comment" class="sr-only"></label>
-          <textarea type="text" id="comment" name="comment" placeholder="Comment"></textarea>
-
-          <button type="submit">Post Comment</button>
+          <div class="submit"> 
+            <button type="submit">Post Comment</button>
+          </div>
+    
         </form>
       </div>
     </section>
