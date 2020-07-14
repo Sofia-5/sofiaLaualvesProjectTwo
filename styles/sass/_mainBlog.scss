@@ -209,5 +209,12 @@
   width: 100%;
 }
 
+.blog .sectionTwo .form .submit button:hover,
+.blog .sectionTwo .form .submit button:focus-within {
+  background-color: $backgrd2Colour;
+  border: 2px solid $backgrd3Colour;
+  color: $backgrd3Colour;
+}
+
 
 

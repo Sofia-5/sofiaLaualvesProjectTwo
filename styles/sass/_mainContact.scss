@@ -119,3 +119,11 @@
   margin: 40px 0;
   width: 100%;
 }
+
+.contact .form form button:hover,
+.contact .form form button:focus-within {
+  background-color: $backgrd2Colour;
+  border: 2px solid $backgrd3Colour;
+  color: $backgrd3Colour;
+}
+

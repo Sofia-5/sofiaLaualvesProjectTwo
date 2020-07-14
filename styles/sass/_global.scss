@@ -35,3 +35,17 @@ p {
 .button {
   @include buttons ();
 }
+
+
+a.button:hover,
+a.button:focus-within {
+    background-color: $backgrd2Colour;
+    border: 2px solid $backgrd3Colour;
+    color: $backgrd3Colour;
+}
+
+a:hover,
+a:focus-within {
+  border-bottom: 3px solid $backgrd3Colour;
+  transition-duration: 0.3s;
+}

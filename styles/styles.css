@@ -327,6 +327,27 @@ p {
   margin-top: 40px;
 }
 
+a.button:hover,
+a.button:focus-within {
+  background-color: #0D457F;
+  border: 2px solid #FDD908;
+  color: #FDD908;
+}
+
+a:hover,
+a:focus-within {
+  border-bottom: 3px solid #FDD908;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+button:hover,
+button:focus-within {
+  background-color: #0D457F;
+  border: 2px solid #FDD908;
+  color: #FDD908;
+}
+
 /*****************/
 /* Global Styles */
 /*****************/
@@ -353,12 +374,12 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  position: relative;
   height: 80vh;
+  position: relative;
 }
 
 .homePage .headerNav {
-  margin-bottom: 6rem;
+  margin-bottom: 17rem;
   padding-top: 6rem;
 }
 
@@ -373,7 +394,7 @@ h1 {
 }
 
 .homePage .headerNav a {
-  padding: 10px 40px 10px 0;
+  margin: 10px 40px 10px 0;
   color: #ffffff;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
@@ -383,13 +404,15 @@ h1 {
   text-transform: uppercase;
 }
 
-.homePage .bottomHeader {
+.homePage .wrapper .bottomHeader {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .homePage .bottomHeader h1 {
@@ -399,14 +422,14 @@ h1 {
   text-shadow: 2px 2px 8px #031f22;
   width: 40%;
   margin-bottom: 2rem;
+  width: 40%;
 }
 
 .homePage .headerImg {
-  min-width: 50%;
-  max-width: 50%;
+  width: 74%;
   position: absolute;
-  right: 0;
-  bottom: -160px;
+  right: -500px;
+  top: 289px;
 }
 
 /*****************/
@@ -671,7 +694,7 @@ h1 {
 }
 
 .blog .headerNav a {
-  padding: 10px 40px 10px 0;
+  margin: 10px 40px 10px 0;
   color: #ffffff;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
@@ -1009,7 +1032,7 @@ h1 {
 }
 
 .contact .headerNav a {
-  padding: 10px 40px 10px 0;
+  margin: 10px 40px 10px 0;
   color: #ffffff;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
