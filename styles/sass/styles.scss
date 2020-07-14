@@ -3,7 +3,6 @@
 @import 'mixins';
 @import 'global';
 @import 'headerHome'; 
-@import 'nav';
 @import 'mainHome'; 
 
 @import 'headerBlog'; 
@@ -13,5 +12,9 @@
 @import 'mainContact';
 
 @import 'footer';
-@import 'mediaqueries';
+
+@import 'mediaQueriesHome';
+@import 'mediaQueriesBlog';
+@import 'mediaQueriesContact';
+
 

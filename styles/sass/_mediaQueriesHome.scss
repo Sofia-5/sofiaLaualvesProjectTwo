@@ -1,0 +1,361 @@
+/*****************/
+/* Home Page Styles */ 
+/*****************/
+
+
+/* Header Styles */ 
+/*****************/
+@media (max-width: 1476px) {
+  
+  .homePage .headerNav { 
+    margin-bottom: 4rem; 
+  }
+
+  .homePage .wrapper .bottomHeader {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .homePage .bottomHeader h1 {
+    @include h1 ($color:#FDD908);
+    font-size: 6.5rem;
+    width: 100%
+  }
+
+  .homePage .headerImg {
+    position: absolute;
+    width: 64%;
+    right: -189px;
+    top: 141%;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  
+  /* Header Styles */ 
+  /*****************/
+
+  .homePage .headerNav ul {
+    justify-content: center;
+  }
+
+  .homePage .headerNav a {
+    margin: 10px 40px 10px 40px;
+  }
+
+  .homePage .headerImg {
+    position: initial;
+    margin-top: 40px;
+  }
+  
+  /* Section 1 Styles */ 
+  /*****************/
+
+  .homePage .sectionOneFlex {
+    padding-top: 30px;
+  }
+
+  .homePage .sectionOneFlex {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .homePage .positionIcons {
+    width: 80%;
+    margin: 30px 0;
+    text-align: left;
+  }
+
+  .homePage .positionIcons:nth-child(1), .homePage .positionIcons:nth-child(3) { 
+    margin: 0;
+  }
+
+/* Section 2 Styles */ 
+  /*****************/
+
+  .homePage .topSectionTwoFlex .leftImg {
+    top: 96px;
+    left: -80px;
+  }
+
+  .homePage .bottomSectionTwoFlex .rightImg {
+    bottom: -80px;
+    right: -79px;
+  }
+
+}
+
+@media (max-width: 1074px) {
+  
+  /* Header Styles */ 
+  /*****************/
+
+  .homePage .bottomHeader h1 {
+    @include h1 ($color:#FDD908);
+    font-size: 6.5rem;
+    width: 60%;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 1052px) {
+  
+  /* Section 2 Styles */ 
+  /*****************/
+
+
+  .homePage .topSectionTwoFlex {
+    flex-direction: column;
+  }
+  
+  .homePage .topSectionTwoFlex .leftImg {
+    position: initial;
+    justify-content: center;
+    max-width: 100%;
+    padding: 70px 0 30px 0;
+  }
+
+  .homePage .bottomSectionTwoFlex .rightImg {
+    position: initial;
+    max-width: 100%;
+    padding: 10px 40px;
+  }
+
+  .homePage .textContainer {
+    max-width: 100%;
+  }
+  
+  .homePage .bottomSectionTwoFlex { 
+    flex-direction: column-reverse;
+  }
+
+  /* Section 2 Styles */ 
+  /*****************/
+
+  .homePage .sectionFiveContainer {
+    flex-direction: column-reverse;
+  }
+
+  .homePage .sectionFiveImage {
+    max-width: 100%;
+    text-align: center; 
+    padding-top: 30px;  
+}
+
+  .homePage .sectionFiveImage img {
+  max-width: none;
+}
+
+}
+
+@media (max-width: 762px) {
+  
+  /* Header Styles */ 
+  /*****************/
+
+  .homePage .bottomHeader h1 {
+    @include h1 ($color:#FDD908);
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+
+  .homePage .headerImg {
+    position: static;
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Section 1 Styles */ 
+  /*****************/
+
+  .homePage .positionIcons h2 {
+    font-size: 3.5rem;
+  }
+
+ /* Section 2 Styles */ 
+  /*****************/
+
+  .homePage .sectionTwo .topSectionTwoFlex .textContainer {
+    text-align: center;
+  }
+
+  .homePage .sectionTwo .bottomSectionTwoFlex .textContainer {
+    text-align: center;
+  }
+
+  /* Section 3 Styles */ 
+  /*****************/
+
+  .homePage .sectionThree .wrapper {
+    width: 86%;
+  }
+
+  .homePage .sectionThree {
+    padding: 74px 0 90px 0;
+  }
+
+  .homePage .sectionThree h2 {
+    font-size: 3.5rem;
+  }
+
+/* Section 5 Styles */ 
+  /*****************/
+
+  .homePage .sectionFive .wrapper {
+    width: 100%;
+  }
+
+  .homePage .SecFiveTextContainer h2 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .homePage .sectionFiveImage {
+    width: 42%;
+  }
+
+  .homePage .SecFiveTextContainer {
+    width: 80%;
+    text-align: center;
+  }
+
+
+}
+
+
+@media (max-width: 610px) {
+  
+  /* Header Styles */ 
+  /*****************/
+
+  .homePage .headerNav a {
+    margin: 10px 0 10px 40px;
+  }
+  
+}
+
+
+@media (max-width: 320px) {
+  
+  /* Header Styles */ 
+  /*****************/
+
+  .homePage header {
+      height: 50vh;
+  }
+
+  .homePage .bottomHeader h1 {
+    font-size: 3rem;
+  }
+
+  .homePage .headerNav a {
+    display: none;
+  }
+
+  .homePage .headerNav i {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+
+    /* Section 1 Styles */ 
+  /*****************/ 
+
+  .homePage .positionIcons {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .homePage .positionIcons h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+.homePage .positionIcons p {
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+.homePage .positionIcons i {
+  display: none;
+}
+
+   /* Section 2 Styles */ 
+  /*****************/ 
+
+.homePage .sectionTwo h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: 0.13rem;
+}
+
+.homePage .sectionTwo p {
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+  /* Section 3 Styles */ 
+  /*****************/ 
+
+  .homePage .sectionThree .wrapper h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.13rem;
+    padding-bottom: 20px;
+}
+
+.homePage .sectionThree .wrapper p {
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+ /* Section 5 Styles */ 
+  /*****************/ 
+
+.homePage .SecFiveTextContainer h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: 0.13rem;
+  padding-bottom: 20px;
+}
+
+.homePage .SecFiveTextContainer p {
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+
+.homePage .sectionFiveImage {
+  width: 100%;
+  padding: 40px;
+}
+
+.homePage .sectionFiveImage img {
+  max-width: 100%;
+}
+
+ /* Section 6 Styles */ 
+  /*****************/ 
+
+.homePage .sectionSix .FlexImgContainer {
+  flex-direction: column;
+  align-items: center;
+}
+.homePage .sectionSix li {
+  width: 100%;
+  padding: 20px;
+}
+}
