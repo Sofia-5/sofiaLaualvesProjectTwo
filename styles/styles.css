@@ -1634,6 +1634,84 @@ footer p a {
 /*****************/
 /* Blog Styles */
 /*****************/
+@media (max-width: 1699px) {
+  /* Section 1 Styles */
+  /*****************/
+}
+
+@media (max-width: 320px) {
+  /* Header Styles */
+  /*****************/
+  .blog header {
+    height: 50vh;
+  }
+  .blog h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .blog .headerNav a {
+    display: none;
+  }
+  .blog .wrapper .headerNav i {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  /* Section 1 Styles */
+  /*****************/
+  .blog .sectionOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .sectionOne aside {
+    width: 95%;
+    height: 850px;
+    padding: 5px;
+    margin: 25px 0 35px 50px;
+  }
+  .blog .sectionOne .blueContainer .margin-bottom {
+    margin-bottom: 30px;
+  }
+  .blog .sectionOne .sectionOneRightContainer .yellowContainer {
+    padding: 0 10px 50px 0;
+  }
+  .blog .sectionOne .sectionOneRightContainer .yellowContainer .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .blog .sectionOne .sectionOneRightContainer .yellowContainer h2 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+  }
+  .blog .sectionOne .sectionOneRightContainer .yellowContainer p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+  /* Section 2 Styles */
+  .blog .sectionTwo .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .blog .sectionTwo .wrapper h2 {
+    font-size: 3.5rem;
+    line-height: 5.98rem;
+    padding-top: 34px;
+  }
+  /* Form Styles */
+  .blog .sectionTwo .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .blog .sectionTwo .form form .topForm input {
+    width: 100%;
+  }
+}
+
 /*****************/
 /* Contact Styles */
 /*****************/
