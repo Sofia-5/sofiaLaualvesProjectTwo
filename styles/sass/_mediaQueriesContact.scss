@@ -1,0 +1,134 @@
+/*****************/
+/* Contact Styles */ 
+/*****************/
+
+@media (max-width: 1405px) {
+
+  /* Section 1 Styles */ 
+/*****************/
+  .contact .form {
+    width: 70%;
+  }
+
+  .contact .form form {
+    right: -150px;
+    
+}
+}
+
+@media (max-width: 1305px) {
+
+/* Section 1 Styles */ 
+/*****************/
+  .contact .form form {
+    right: -140px;
+}
+}
+
+@media (max-width: 1205px) {
+
+/* Section 1 Styles */ 
+/*****************/
+    .contact .form {
+    width: 95%;
+    }
+
+  .contact .form form {
+    right: -130px;
+}
+}
+
+@media (max-width: 1063px) {
+  
+/* Section 1 Styles */ 
+/*****************/
+  .contact .sectionOneFlexContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact .form form {
+    position: static;
+    margin-top: 5rem;
+  }
+
+  .contact .sectionOneFlexContainer .leftContainer {
+    width: 100%;
+    text-align: center;
+    margin: 85px 0 50px 0;
+}
+
+  .contact .sectionOneFlexContainer .leftContainer div i {
+    padding: 0 15px 25px 15px;
+}
+
+}
+
+@media (max-width: 617px) {
+  
+  /* Header Styles */ 
+  /*****************/
+  .contact .headerNav ul {
+    justify-content: center;
+  }
+
+  .contact .headerNav a {
+    margin: 10px 30px 10px 30px;
+  }
+
+  .contact .bottomHeaderContainer h1 {
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .contact .form form .topForm input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 482px) {
+  
+  /* Header Styles */ 
+  /*****************/
+
+  .contact .headerNav a {
+    margin: 10px;
+  }
+
+  /* Footer Styles */ 
+  /*****************/
+
+  .contact .sectionOneFlexContainer .leftContainer {
+  
+    margin: 78px 0 -54px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  /* Header Styles */ 
+  /*****************/
+
+  .contact header {
+      height: 50vh;
+  }
+
+  .contact .bottomHeaderContainer h1 {
+    font-size: 3rem;
+  }
+
+  .contact .headerNav a {
+    display: none;
+  }
+
+  .contact .headerNav i {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+}

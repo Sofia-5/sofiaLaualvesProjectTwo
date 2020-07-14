@@ -96,7 +96,6 @@
   /*****************/
 
   .homePage .bottomHeader h1 {
-    @include h1 ($color:#FDD908);
     font-size: 6.5rem;
     width: 60%;
     text-align: center;
@@ -161,7 +160,6 @@
   /*****************/
 
   .homePage .bottomHeader h1 {
-    @include h1 ($color:#FDD908);
     font-size: 4rem;
     width: 100%;
     text-align: center;
@@ -239,7 +237,7 @@
   /*****************/
 
   .homePage .headerNav a {
-    margin: 10px 0 10px 40px;
+    margin: 10px;
   }
   
 }
