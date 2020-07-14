@@ -1,3 +1,30 @@
 /*****************/
 /* Contact Styles */ 
 /*****************/
+
+.contact header {
+  background-image: url("../assets/contact-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 60vh;
+}
+
+.contact .headerNav { 
+  margin-bottom: 12rem; 
+  padding-top: 6rem;
+}
+
+.contact .headerNav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact .headerNav a {
+  @include navs ();
+} 
+
+.contact .bottomHeaderContainer h1 {
+  width: 100%;
+}

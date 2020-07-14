@@ -3,10 +3,22 @@
 /* Blog Styles */ 
 /*****************/
 
-.blog header .headerBackground {
-  background-image: url("../BoatRideAdventures/assets/blog-header.jpg");
+.blog header {
+  background-image: url("../assets/blog-header.jpg");
   width: 100%;
-  background-color: royalblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.blog .headerNav { 
+  margin-bottom: 6rem; 
+  padding-top: 6rem;
+}
+
+.blog .headerNav ul {
+  display: flex;
+  flex-direction: row;
 }
 
 .blog .headerNav a {

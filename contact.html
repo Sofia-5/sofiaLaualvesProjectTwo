@@ -6,6 +6,7 @@
   <title>Contact Us</title>
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://kit.fontawesome.com/681aae2dac.js" crossorigin="anonymous"></script>
 </head>
 <body class="contact">
   <a href="#maincontent" class="skip-link">Skip to main content.</a>
@@ -44,40 +45,48 @@
     <!------------------------>
     <!-- Section 1 Starts -->
     <!------------------------>
-      <section class="sectionOneFlexContainer">
+    <section class="sectionOne">
     
-      <aside class="LeftContainer">
-        <div>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-whatsapp"></i>
+      <div class="sectionOneFlexContainer">
+    
+        <aside class="leftContainer">
+          <div>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <p class="email">info@gmail.com</p>
+
+          <div class="address">
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+          </div>
+        </aside>
+    
+        <div class="form">
+          <form class="emailform" action="#" method="get">
+
+            <div class="topForm">
+              <label for="name" class="sr-only"></label>
+              <input type="text" class="margin" id="name" name="name" placeholder="Name">
+              
+              <label for="email" class="sr-only"></label>
+              <input type="email" id="email" name="email" placeholder="Email address">
+            </div>
+
+            <div class="bottomForm">
+              <label for="comment" class="sr-only"></label>
+              <textarea type="text" id="comment" name="comment" placeholder="Message"></textarea>
+            </div>
+
+            <button class="submit" type="submit">Submit</button>
+          </form>
         </div>
-        <p>info@gmail.com</p>
-
-        <div class="address">
-          <p>123 - 456 - 7890</p>
-          <p>123 Queen Street West, Unit 10</p>
-          <p>Toronto, Ontario</p>
-          <p>M5V2D5</p>
-        </div>
-      </aside>
-  
-      <div class="form">
-        <form class="emailform" action="#" method="get">
-
-          <label for="name" class="sr-only"></label>
-          <input type="text" id="name" name="name" placeholder="Name">
-          
-          <label for="email" class="sr-only"></label>
-          <input type="email" id="email" name="email" placeholder="Email address">
-
-          <label for="comment" class="sr-only"></label>
-          <textarea type="text" id="comment" name="comment" placeholder="Comment"></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+      </div>  
+    </section>
     <!------------------------>
     <!-- Section 1 Ends Here -->
     <!------------------------>

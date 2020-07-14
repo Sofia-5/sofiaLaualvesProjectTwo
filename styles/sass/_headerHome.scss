@@ -14,15 +14,17 @@ h1 {
 /*****************/
 
 .homePage header {
-  // background-color: purple;
-  background-image: url("../../assets/home-header.jpg");
+  background-image: url("../assets/home-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   position: relative;
-  height: 90vh;
+  height: 80vh;
 }
 
 .homePage .headerNav { 
-  margin: 6rem 0; 
+  margin-bottom: 6rem; 
+  padding-top: 6rem;
 }
 
 .homePage .headerNav ul {
